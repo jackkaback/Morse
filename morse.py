@@ -52,6 +52,10 @@ def translations(char):
 
 while True:
     string = raw_input()
+    string = string.lower()
+
+    if string == "qqq":
+        break
 
     s = ""
 

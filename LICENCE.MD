@@ -1,1 +1,1 @@
-GNU Public License (any)
+GNU General Public License (any)

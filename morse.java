@@ -53,11 +53,10 @@ public class morse {
 
 
 		while(true){
-			String text = new String();
+			String text;
 			System.out.println("Enter your text");
 
-			text = input.nextLine();
-			text = text.toLowerCase();
+			text = input.nextLine().toLowerCase();
 
 			for(int ii = 0; ii < text.length(); ii++){
 				System.out.print(map.get(Character.toString(text.charAt(ii))));

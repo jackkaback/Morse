@@ -1,9 +1,13 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
 
 public class morse {
 
 	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
 
 		Map<String, String> map = new HashMap<String, String>();
 
@@ -47,7 +51,19 @@ public class morse {
 		map.put("?", "**--** ");
 		map.put(" ", "\t");
 
-		System.out.println(map.get("a"));
+
+		while(true){
+			String text = new String();
+			System.out.println("Enter your text");
+
+			text = input.nextLine();
+			text = text.toLowerCase();
+
+			for(int ii = 0; ii < text.length(); ii++){
+				System.out.print(map.get(Character.toString(text.charAt(ii))));
+			}
+			System.out.println();
+		}
 	}
 
 }

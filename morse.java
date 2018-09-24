@@ -58,6 +58,10 @@ public class morse {
 
 			text = input.nextLine().toLowerCase();
 
+			if (text.equals("qqq")){
+				break;
+			}
+
 			for(int ii = 0; ii < text.length(); ii++){
 				System.out.print(map.get(Character.toString(text.charAt(ii))));
 			}

@@ -1,7 +1,6 @@
 #!/usr/bin/python2.7
 
-
-def translations(char):
+while True:
 
 	morseDict = {
 		"a": "*- ",
@@ -45,11 +44,6 @@ def translations(char):
 		" ": "\t"
 	}
 
-	return morseDict.get(char)
-
-
-
-while True:
 	print "Enter text to translate"
 	string = raw_input()
 	string = string.lower()
@@ -60,6 +54,6 @@ while True:
 	s = ""
 
 	for c in string:
-		s += str(translations(c))
+		s += str(morseDict.get(c))
 
 	print s

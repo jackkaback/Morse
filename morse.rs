@@ -45,4 +45,8 @@ fn main() {
 
 
     println!("Hello World!");
+
+    while true{
+        let mut input = String::new();
+    }
 }

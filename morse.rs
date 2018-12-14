@@ -44,9 +44,20 @@ fn main() {
     morseDict.insert(" ".to_string(), "\t".to_string());
 
 
-    println!("Hello World!");
-
     while true{
         let mut input = String::new();
+
+        match io::stdin().read_line(&mut input) {
+            Ok(n) => {
+                println!("{} bytes read", n);
+                println!("{}", input);
+            }
+            Err(error) => println!("error: {}", error),
+        }
+
+        for c in input.chars() {
+
+
+        }
     }
 }

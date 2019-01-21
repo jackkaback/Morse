@@ -1,5 +1,8 @@
 #!/usr/bin/python2.7
 
+from __future__ import print_function
+from six.moves import input
+
 while True:
 
 	morseDict = {
@@ -44,8 +47,8 @@ while True:
 		" ": "\t"
 	}
 
-	print "Enter text to translate"
-	string = raw_input()
+	print("Enter text to translate")
+	string = input()
 	string = string.lower()
 
 	if string == "qqq":
@@ -56,4 +59,4 @@ while True:
 	for c in string:
 		s += str(morseDict.get(c))
 
-	print s
+	print(s)

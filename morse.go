@@ -53,6 +53,7 @@ func main() {
 
 	var words string
 	for {
+		fmt.Println("Enter text to translate")
 		_, _ = fmt.Scanf("%s", &words)
 
 		//make everything lower case to avoid issues
